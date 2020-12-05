@@ -11,8 +11,8 @@ var character
 
 export var size_scale = 1
 
-export var SPEED =5
-export var ACCELERATION = 4
+export var SPEED =2
+export var ACCELERATION = 1
 export var DECELERATION = 4
 export var JUMP_HEIGHT = 10
 

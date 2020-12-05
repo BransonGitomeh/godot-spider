@@ -5,8 +5,8 @@ extends Camera
 
 export var size_scale = 1
 
-export var distance = 128
-export var height = 42
+export var distance = 10
+export var height = 5
 
 var player
 var lockon
