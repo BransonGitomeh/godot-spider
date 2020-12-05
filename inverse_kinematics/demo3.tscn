@@ -38,7 +38,7 @@ data = PoolVector3Array( 10, 0, 10, -10, 0, 10, 10, 0, -10, -10, 0, 10, -10, 0, 
 [node name="demo" type="Node"]
 
 [node name="spider_controller" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.67414, -0.382, 2.71914 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.67414, -0.382, 1.32052 )
 
 [node name="leg_animator1" parent="spider_controller" instance=ExtResource( 2 )]
 transform = Transform( 1, -2.91038e-10, 0, 1.16415e-10, 1, 0, -1.86265e-09, -1.86265e-09, 1, 0, 0.44924, 0.4 )
@@ -74,7 +74,7 @@ mesh = SubResource( 1 )
 material/0 = ExtResource( 4 )
 
 [node name="joint" type="BoneAttachment" parent="spider_controller/leg_animator1/joint"]
-transform = Transform( 0.964653, 0.190724, 0.0742352, -0.161867, 0.936184, -0.282676, -0.1233, 0.263141, 0.951881, 0.0042634, -0.00080198, -1.07128 )
+transform = Transform( 0.985329, 0.019232, -0.0258467, -0.0257311, 0.948142, -0.288413, 0.0189422, 0.287552, 0.952708, 0.00413704, -0.000796139, -1.0713 )
 
 [node name="MeshInstance" type="MeshInstance" parent="spider_controller/leg_animator1/joint/joint"]
 transform = Transform( 1, -7.45058e-09, -5.96046e-08, 0, 1, -1.86265e-09, 0, 2.8871e-08, 1, 0, -1.78814e-07, -0.5 )
@@ -82,7 +82,7 @@ mesh = SubResource( 1 )
 material/0 = ExtResource( 4 )
 
 [node name="joint" type="BoneAttachment" parent="spider_controller/leg_animator1/joint/joint"]
-transform = Transform( 0.997527, 0.0501546, -0.0422989, 0.0505622, -0.175583, 0.981821, 0.0419107, -0.981911, -0.177728, -0.000126123, -4.12464e-05, -1.00237 )
+transform = Transform( 0.999613, -0.0114729, 0.00694033, -0.0105045, -0.34692, 0.936427, -0.00835496, -0.936482, -0.346984, 4.66108e-05, -1.56164e-05, -1.00237 )
 
 [node name="MeshInstance2" type="MeshInstance" parent="spider_controller/leg_animator1/joint/joint/joint"]
 transform = Transform( 1, -0.000118151, -7.96393e-05, 0.000118166, 1, -3.14424e-05, 7.96542e-05, 3.15653e-05, 1, -4.1008e-05, -1.5676e-05, -0.5 )
@@ -90,7 +90,7 @@ mesh = SubResource( 1 )
 material/0 = ExtResource( 4 )
 
 [node name="joint" type="BoneAttachment" parent="spider_controller/leg_animator1/joint/joint/joint"]
-transform = Transform( 0.997549, -0.0108013, 0.00635374, 0.0107919, 0.998921, -0.000787615, -0.00633078, 0.000855543, 0.999825, 0.000128031, 0.00172472, -1.01107 )
+transform = Transform( 0.997611, -0.00256013, 0.00120112, 0.00258977, 0.998565, -0.0284963, -0.0011251, 0.0284748, 0.999426, -0.000108004, 0.00314617, -1.01061 )
 
 [node name="leg_animator2" parent="spider_controller" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44924, -0.449437 )
@@ -126,7 +126,7 @@ mesh = SubResource( 1 )
 material/0 = ExtResource( 4 )
 
 [node name="joint" type="BoneAttachment" parent="spider_controller/leg_animator2/joint"]
-transform = Transform( 0.969327, 0.172279, 0.0623062, -0.147547, 0.939042, -0.28156, -0.106909, 0.266031, 0.953507, 0.000630617, -0.000973761, -1.07139 )
+transform = Transform( 0.985528, 0.0347121, -0.0181952, -0.0382818, 0.947919, -0.28822, 0.0072356, 0.28723, 0.953384, 0.000630617, -0.000973493, -1.07139 )
 
 [node name="MeshInstance" type="MeshInstance" parent="spider_controller/leg_animator2/joint/joint"]
 transform = Transform( 1, -7.45058e-09, -5.96046e-08, 0, 1, -1.86265e-09, 0, 2.8871e-08, 1, 0, -1.78814e-07, -0.5 )
@@ -134,7 +134,7 @@ mesh = SubResource( 1 )
 material/0 = ExtResource( 4 )
 
 [node name="joint" type="BoneAttachment" parent="spider_controller/leg_animator2/joint/joint"]
-transform = Transform( 0.998088, 0.0431756, -0.0362722, 0.0434807, -0.178478, 0.981599, 0.0359841, -0.981898, -0.180019, -0.000106096, -3.51667e-05, -1.00181 )
+transform = Transform( 0.999658, -0.00542985, 0.00328051, -0.0049666, -0.346872, 0.936471, -0.0039554, -0.936747, -0.346788, 3.3021e-05, -1.5378e-05, -1.00178 )
 
 [node name="MeshInstance2" type="MeshInstance" parent="spider_controller/leg_animator2/joint/joint/joint"]
 transform = Transform( 1, -0.000118151, -7.96393e-05, 0.000118166, 1, -3.14424e-05, 7.96542e-05, 3.15653e-05, 1, -4.1008e-05, -1.5676e-05, -0.5 )
@@ -142,7 +142,7 @@ mesh = SubResource( 1 )
 material/0 = ExtResource( 4 )
 
 [node name="joint" type="BoneAttachment" parent="spider_controller/leg_animator2/joint/joint/joint"]
-transform = Transform( 0.997601, -0.0251536, 0.0146916, 0.0251126, 0.998785, 0.0011294, -0.0146888, -0.000758692, 0.999721, 6.4373e-05, 0.00185156, -1.01098 )
+transform = Transform( 0.99794, -0.00183329, 0.000738847, 0.00181078, 0.998743, 0.0267393, -0.000786202, -0.0267199, 0.999417, -9.61423e-05, 0.00334501, -1.0105 )
 
 [node name="leg_animator3" parent="spider_controller" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.98023e-08, 0.44924, -0.449437 )
@@ -178,7 +178,7 @@ mesh = SubResource( 1 )
 material/0 = ExtResource( 4 )
 
 [node name="joint" type="BoneAttachment" parent="spider_controller/leg_animator3/joint"]
-transform = Transform( 0.978771, -0.0810872, -0.0864266, 0.055086, 0.953728, -0.266788, 0.103757, 0.258572, 0.956926, 0.000721693, -0.00120556, -1.07127 )
+transform = Transform( 0.98329, 0.0694709, 0.00306766, -0.0657399, 0.952997, -0.266866, -0.0214, 0.26449, 0.960752, 0.000735879, -0.00127524, -1.07041 )
 
 [node name="MeshInstance" type="MeshInstance" parent="spider_controller/leg_animator3/joint/joint"]
 transform = Transform( 1, -7.45058e-09, -5.96046e-08, 0, 1, -1.86265e-09, 0, 2.8871e-08, 1, 0, -1.78814e-07, -0.5 )
@@ -186,7 +186,7 @@ mesh = SubResource( 1 )
 material/0 = ExtResource( 4 )
 
 [node name="joint" type="BoneAttachment" parent="spider_controller/leg_animator3/joint/joint"]
-transform = Transform( 0.998181, -0.0437732, 0.0365498, -0.0436019, -0.171372, 0.982925, -0.0368475, -0.983009, -0.172985, 0.000151157, -2.81334e-05, -1.00115 )
+transform = Transform( 0.999766, 0.00708612, -0.00654758, 0.00737389, -0.122227, 0.991159, 0.00623778, -0.991245, -0.122263, -4.23193e-06, -1.56164e-05, -1.002 )
 
 [node name="MeshInstance2" type="MeshInstance" parent="spider_controller/leg_animator3/joint/joint/joint"]
 transform = Transform( 1, -0.000118151, -7.96393e-05, 0.000118166, 1, -3.14424e-05, 7.96542e-05, 3.15653e-05, 1, -4.1008e-05, -1.5676e-05, -0.5 )
@@ -194,7 +194,7 @@ mesh = SubResource( 1 )
 material/0 = ExtResource( 4 )
 
 [node name="joint" type="BoneAttachment" parent="spider_controller/leg_animator3/joint/joint/joint"]
-transform = Transform( 0.993779, 0.0119062, -0.00672279, -0.0117552, 0.99879, 0.0134223, 0.00684078, -0.01333, 0.999703, -0.000299931, 0.00198889, -1.01054 )
+transform = Transform( 0.993855, -0.0049061, 0.00310452, 0.0048745, 0.998906, 0.00220871, -0.00309674, -0.00219144, 0.999826, -4.60744e-05, 0.00140381, -1.01065 )
 
 [node name="leg_animator4" parent="spider_controller" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.98023e-08, 0.44924, 0.4 )
@@ -230,7 +230,7 @@ mesh = SubResource( 1 )
 material/0 = ExtResource( 4 )
 
 [node name="joint" type="BoneAttachment" parent="spider_controller/leg_animator4/joint"]
-transform = Transform( 0.981627, -0.0618007, -0.0723024, 0.0395184, 0.952128, -0.275028, 0.0855895, 0.269177, 0.956222, 0.0062027, -0.00163591, -1.06755 )
+transform = Transform( 0.981948, 0.0890171, 0.0166433, -0.0810216, 0.952297, -0.264916, -0.0393152, 0.260803, 0.961635, 0.0062027, -0.00163585, -1.06755 )
 
 [node name="MeshInstance" type="MeshInstance" parent="spider_controller/leg_animator4/joint/joint"]
 transform = Transform( 1, -7.45058e-09, -5.96046e-08, 0, 1, -1.86265e-09, 0, 2.8871e-08, 1, 0, -1.78814e-07, -0.5 )
@@ -238,7 +238,7 @@ mesh = SubResource( 1 )
 material/0 = ExtResource( 4 )
 
 [node name="joint" type="BoneAttachment" parent="spider_controller/leg_animator4/joint/joint"]
-transform = Transform( 0.998555, -0.0356696, 0.0301011, -0.0360482, -0.178545, 0.981857, -0.0297143, -0.982082, -0.179598, 0.000127077, -2.37226e-05, -1.00182 )
+transform = Transform( 0.999447, 0.0141713, -0.0131691, 0.0147466, -0.11636, 0.991691, 0.0125491, -0.991912, -0.116522, -2.7895e-05, -1.77622e-05, -1.00182 )
 
 [node name="MeshInstance2" type="MeshInstance" parent="spider_controller/leg_animator4/joint/joint/joint"]
 transform = Transform( 1, -0.000118151, -7.96393e-05, 0.000118166, 1, -3.14424e-05, 7.96542e-05, 3.15653e-05, 1, -4.1008e-05, -1.5676e-05, -0.5 )
@@ -246,7 +246,7 @@ mesh = SubResource( 1 )
 material/0 = ExtResource( 4 )
 
 [node name="joint" type="BoneAttachment" parent="spider_controller/leg_animator4/joint/joint/joint"]
-transform = Transform( 0.997618, 0.0251758, -0.0147673, -0.025128, 0.999226, 0.00086228, 0.0147579, -0.00048997, 0.999722, -0.000223637, 0.0022471, -1.01065 )
+transform = Transform( 0.998031, 0.00177559, -0.00114425, -0.0017773, 0.999527, -0.00384281, 0.00113536, 0.0038437, 0.999823, -1.0252e-05, 0.00146985, -1.01076 )
 
 [node name="body" type="MeshInstance" parent="spider_controller"]
 transform = Transform( 0.8, 0, 0, -4.65661e-10, 0.4, 0, -1.86265e-09, 0, 0.8, 0, 1, 0.050025 )
@@ -272,8 +272,12 @@ transform = Transform( -0.119471, 0.629567, -0.767705, 0.128496, 0.776545, 0.616
 [node name="StaticBody" type="StaticBody" parent="environment"]
 
 [node name="floor" type="MeshInstance" parent="environment/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.48131, 0, 0 )
 mesh = SubResource( 6 )
 material/0 = SubResource( 7 )
 
 [node name="CollisionShape" type="CollisionShape" parent="environment/StaticBody"]
 shape = SubResource( 8 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.91524, 2.76886, 10.5251 )

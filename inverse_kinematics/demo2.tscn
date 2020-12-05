@@ -147,7 +147,7 @@ step_min_distance = 0.3
 
 [node name="inverse_kinematic_solver" parent="creature_controller/leg_animator" instance=ExtResource( 2 )]
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -0.443955, 1.27712, -1.66315 )
-target_position = Vector3( -1.94711, 0, -0.995644 )
+target_position = Vector3( -1.871, 1.19209e-07, -0.951697 )
 pole_position = Vector3( -1.14344, 2.65326, -1.01799 )
 pole_rotation = Vector3( -1.14344, 2.04545, -1.01799 )
 

@@ -141,14 +141,14 @@ func update_joint_transforms():
 			var epsilon = 0.01
 			if positions[positions.size()-1].distance_squared_to(target_position) < epsilon*epsilon:
 				break
-			for i in range(positions.size()-1, 0, -1):
-				if i == positions.size()-1:
-					positions[i] = target_position
+			for x in range(positions.size()-1, 0, -1):
+				if x == positions.size()-1:
+					positions[x] = target_position
 				else:
-					positions[i] = positions[i+1] + (positions[i] - positions[i+1]).normalized() * joint_lengths[i]
+					positions[x] = positions[x+1] + (positions[x] - positions[x+1]).normalized() * joint_lengths[x]
 			# forward
-			for i in range(1, positions.size()):
-				positions[i] = positions[i-1] + (positions[i] - positions[i-1]).normalized() * joint_lengths[i-1]
+			for x in range(1, positions.size()):
+				positions[x] = positions[x-1] + (positions[x] - positions[x-1]).normalized() * joint_lengths[x-1]
 	for i in range (1, positions.size()-1): # we can only move the middle joints (towards pole)
 		var normal = (positions[i+1]-positions[i-1]).normalized()
 		var plane = Plane(normal, positions[i-1].dot(normal)) # put a plane on i-1 so we can check how much middle node must be rotated to reach pole projection on the plane
