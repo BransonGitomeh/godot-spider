@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://inverse_kinematics/demo3.tscn" type="PackedScene" id=1]
+[ext_resource path="res://floor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Characters/player.tscn" type="PackedScene" id=3]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="StaticBody" parent="." instance=ExtResource( 2 )]
+
+[node name="player" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.68358, 0 )
+
+[node name="Camera" parent="player/target" index="0"]
+distance = 5
+height = 3
+lspeed = 1.0
+
+[node name="demo" parent="player" instance=ExtResource( 1 )]
+
+[editable path="player"]
